@@ -13,7 +13,7 @@
 		A8068092167010030071C71E /* TSQCalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A806808B167010030071C71E /* TSQCalendarRowCell.m */; };
 		A8068094167010030071C71E /* TSQCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A806808D167010030071C71E /* TSQCalendarView.m */; };
 		A80B62AB1672720C00792DFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A806809E167012980071C71E /* CoreGraphics.framework */; };
-		EFD8DE6D167AF77B00F87FBE /* TimesSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = A806806316700FD70071C71E /* TimesSquare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD8DE6D167AF77B00F87FBE /* HSTimesSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = A806806316700FD70071C71E /* HSTimesSquare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFD8DE6E167AF78100F87FBE /* TSQCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A8068086167010030071C71E /* TSQCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFD8DE6F167AF78600F87FBE /* TSQCalendarMonthHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A8068088167010030071C71E /* TSQCalendarMonthHeaderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFD8DE70167AF78C00F87FBE /* TSQCalendarRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A806808A167010030071C71E /* TSQCalendarRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,10 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A806805B16700FD70071C71E /* libTimesSquare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTimesSquare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A806805B16700FD70071C71E /* libHSTimesSquare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHSTimesSquare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A806805E16700FD70071C71E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A806806216700FD70071C71E /* TimesSquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimesSquare-Prefix.pch"; sourceTree = "<group>"; };
-		A806806316700FD70071C71E /* TimesSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimesSquare.h; sourceTree = "<group>"; };
+		A806806216700FD70071C71E /* HSTimesSquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSTimesSquare-Prefix.pch"; sourceTree = "<group>"; };
+		A806806316700FD70071C71E /* HSTimesSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSTimesSquare.h; sourceTree = "<group>"; };
 		A806806D16700FD80071C71E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A806806F16700FD80071C71E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A8068086167010030071C71E /* TSQCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarCell.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		A806805016700FD70071C71E = {
 			isa = PBXGroup;
 			children = (
-				A806806016700FD70071C71E /* TimesSquare */,
+				A806806016700FD70071C71E /* HSTimesSquare */,
 				A806805D16700FD70071C71E /* Frameworks */,
 				A806805C16700FD70071C71E /* Products */,
 			);
@@ -75,7 +75,7 @@
 		A806805C16700FD70071C71E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A806805B16700FD70071C71E /* libTimesSquare.a */,
+				A806805B16700FD70071C71E /* libHSTimesSquare.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,10 +91,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A806806016700FD70071C71E /* TimesSquare */ = {
+		A806806016700FD70071C71E /* HSTimesSquare */ = {
 			isa = PBXGroup;
 			children = (
-				A806806316700FD70071C71E /* TimesSquare.h */,
+				A806806316700FD70071C71E /* HSTimesSquare.h */,
 				A8068086167010030071C71E /* TSQCalendarCell.h */,
 				A8068087167010030071C71E /* TSQCalendarCell.m */,
 				A8068088167010030071C71E /* TSQCalendarMonthHeaderCell.h */,
@@ -105,13 +105,14 @@
 				A806808D167010030071C71E /* TSQCalendarView.m */,
 				A806806116700FD70071C71E /* Supporting Files */,
 			);
+			name = HSTimesSquare;
 			path = TimesSquare;
 			sourceTree = "<group>";
 		};
 		A806806116700FD70071C71E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A806806216700FD70071C71E /* TimesSquare-Prefix.pch */,
+				A806806216700FD70071C71E /* HSTimesSquare-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -123,7 +124,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD8DE6D167AF77B00F87FBE /* TimesSquare.h in Headers */,
+				EFD8DE6D167AF77B00F87FBE /* HSTimesSquare.h in Headers */,
 				EFD8DE6E167AF78100F87FBE /* TSQCalendarCell.h in Headers */,
 				EFD8DE6F167AF78600F87FBE /* TSQCalendarMonthHeaderCell.h in Headers */,
 				EFD8DE70167AF78C00F87FBE /* TSQCalendarRowCell.h in Headers */,
@@ -134,26 +135,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
-		A81E05F71682A0E000E79A2B /* TimesSquare Documentation */ = {
+		A81E05F71682A0E000E79A2B /* HSTimesSquare Documentation */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "--exit-threshold 2 --logformat xcode --output /tmp/tsq-docs --project-name TimesSquare --project-version 1.0 --project-company \"Square, Inc.\" --company-id com.squareup --no-repeat-first-par --no-search-undocumented-doc TimesSquare/";
-			buildConfigurationList = A81E05F81682A0E000E79A2B /* Build configuration list for PBXLegacyTarget "TimesSquare Documentation" */;
+			buildConfigurationList = A81E05F81682A0E000E79A2B /* Build configuration list for PBXLegacyTarget "HSTimesSquare Documentation" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/appledoc;
 			buildWorkingDirectory = "";
 			dependencies = (
 			);
-			name = "TimesSquare Documentation";
+			name = "HSTimesSquare Documentation";
 			passBuildSettingsInEnvironment = 0;
 			productName = "TimesSquare Documentation";
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		A806805A16700FD70071C71E /* TimesSquare */ = {
+		A806805A16700FD70071C71E /* HSTimesSquare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A806808016700FD80071C71E /* Build configuration list for PBXNativeTarget "TimesSquare" */;
+			buildConfigurationList = A806808016700FD80071C71E /* Build configuration list for PBXNativeTarget "HSTimesSquare" */;
 			buildPhases = (
 				EFD8DE6B167AF77100F87FBE /* Headers */,
 				A806805716700FD70071C71E /* Sources */,
@@ -164,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = TimesSquare;
+			name = HSTimesSquare;
 			productName = PonyDate;
-			productReference = A806805B16700FD70071C71E /* libTimesSquare.a */;
+			productReference = A806805B16700FD70071C71E /* libHSTimesSquare.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +179,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Square;
 			};
-			buildConfigurationList = A806805516700FD70071C71E /* Build configuration list for PBXProject "TimesSquare" */;
+			buildConfigurationList = A806805516700FD70071C71E /* Build configuration list for PBXProject "HSTimesSquare" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A806805A16700FD70071C71E /* TimesSquare */,
-				A81E05F71682A0E000E79A2B /* TimesSquare Documentation */,
+				A806805A16700FD70071C71E /* HSTimesSquare */,
+				A81E05F71682A0E000E79A2B /* HSTimesSquare Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -269,9 +270,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/TimesSquare.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TimesSquare/TimesSquare-Prefix.pch";
+				GCC_PREFIX_HEADER = "TimesSquare/HSTimesSquare-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HSTimesSquare;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -282,9 +283,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/TimesSquare.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TimesSquare/TimesSquare-Prefix.pch";
+				GCC_PREFIX_HEADER = "TimesSquare/HSTimesSquare-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HSTimesSquare;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -301,7 +302,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HSTimesSquare Documentation";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -316,7 +317,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "HSTimesSquare Documentation";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -324,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A806805516700FD70071C71E /* Build configuration list for PBXProject "TimesSquare" */ = {
+		A806805516700FD70071C71E /* Build configuration list for PBXProject "HSTimesSquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A806807E16700FD80071C71E /* Debug */,
@@ -333,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A806808016700FD80071C71E /* Build configuration list for PBXNativeTarget "TimesSquare" */ = {
+		A806808016700FD80071C71E /* Build configuration list for PBXNativeTarget "HSTimesSquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A806808116700FD80071C71E /* Debug */,
@@ -342,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A81E05F81682A0E000E79A2B /* Build configuration list for PBXLegacyTarget "TimesSquare Documentation" */ = {
+		A81E05F81682A0E000E79A2B /* Build configuration list for PBXLegacyTarget "HSTimesSquare Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A81E05F91682A0E000E79A2B /* Debug */,

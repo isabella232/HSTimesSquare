@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A806805A16700FD70071C71E"
                BuildableName = "libTimesSquare.a"
-               BlueprintName = "TimesSquare"
-               ReferencedContainer = "container:TimesSquare.xcodeproj">
+               BlueprintName = "HSTimesSquare"
+               ReferencedContainer = "container:HSTimesSquare.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "A806806B16700FD80071C71E"
                BuildableName = "TimesSquareTests.octest"
                BlueprintName = "TimesSquareTests"
-               ReferencedContainer = "container:TimesSquare.xcodeproj">
+               ReferencedContainer = "container:HSTimesSquare.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A81E05F71682A0E000E79A2B"
                BuildableName = "TimesSquare Documentation"
-               BlueprintName = "TimesSquare Documentation"
-               ReferencedContainer = "container:TimesSquare.xcodeproj">
+               BlueprintName = "HSTimesSquare Documentation"
+               ReferencedContainer = "container:HSTimesSquare.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
